@@ -1,15 +1,15 @@
 GET http://localhost:3000/categories
 
 ###
-GET http://localhost:3000/categories/1
+GET http://localhost:3000/categories/3
 
 ###
 POST http://localhost:3000/categories
 Content-Type: application/json
 
 {
-  "name": "Test",
-  "description": "Category"
+  "name": "Category test",
+  "description": "5"
 }
 
 ###
@@ -17,9 +17,22 @@ PATCH  http://localhost:3000/categories/1
 Content-Type: application/json
 
 {
-  "name": "Test",
-  "description": "Category"
+  "description": "hello"
 }
 
 ###
-DELETE http://localhost:3000/categories/1
+DELETE http://localhost:3000/categories/3
+
+
+###
+GET http://localhost:3000/videos
+
+###
+POST http://localhost:3000/videos
+Content-Type: application/json
+
+{
+    "title": "video test",
+    "description": "video test",
+    "category_id": 1
+}
